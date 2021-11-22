@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Server Notifications</title>
+  <script src="notifications.js" defer></script>
+  <script src="chat.js" defer></script>
+</head>
+
+<body>
+  <h1>Server Notifications</h1>
+  <form id="user-name-form">
+    <input type="text" name="username" id="username" required autocomplete="off">
+    <button type="submit">Login</button>
+  </form>
+  <div style="margin: 10px"></div>
+  <div id="result" style="display: none;">
+    <button id="logout-button" type="submit">Logout</button>
+    <div id="chat"></div>
+    <form id="send-message-form">
+      <input type="text" name="friend" id="friend" required>
+      <input type="text" name="message" id="message" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+
+</html>

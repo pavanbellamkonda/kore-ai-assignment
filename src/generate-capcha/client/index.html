@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Generate Capcha</title>
+    <script src="load-capcha.js" defer></script>
+
+<body>
+    <h1>Generate Capcha</h1>
+    <input type="radio" id="radio-v1" checked name="version">
+    <label for="radio-v1">V1</label>
+    <input type="radio" id="radio-v2" name="version">
+    <label for="radio-v2">V2</label>
+    <h3>Enter length of Capcha:</h3>
+    <form id="capcha-length-form">
+        <input type="number" id="length" name="length" value="8">
+        <button type="submit">Generate</button>
+    </form>
+    <div style="margin: 10px"></div>
+    <div id="result" style="display: none;">
+        Capcha Image:
+        <img src="" id="capcha-image" alt="Capcha image">
+        <div style="margin: 10px"></div>
+        <form id="capcha-validate-form">
+            <input type="text" id="capcha-validate" name="validate" value="">
+            <button type="submit">Validate</button>
+        </form>
+        <p id="validate-result"></p>
+    </div>
+</body>
+
+</html>

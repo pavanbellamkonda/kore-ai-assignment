@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bitly Shortener</title>
+    <script src="handle-submit.js" defer></script>
+
+<body>
+    <h1>Bitly Shortener</h1>
+    <h3>Enter a URL to shorten:</h3>
+    <form id="bitly-form">
+        <input type="url" id="url" name="url" value="http://">
+        <button type="submit">Shorten!</button>
+    </form>
+    <div style="margin: 10px"></div>
+    <h3 id="result" style="display: none;">
+        Shortened URL of 
+        <input type="url" id="long-url" readonly>
+         is 
+         <input type="url" id="short-url" readonly>
+    </h3>
+</body>
+
+</html>
